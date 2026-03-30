@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCompare - Smart Smartphone Choices</title>
+    <meta name="description" content="Compare smartphones across brands for gaming, camera, and budget.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main Desktop Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="navigate('home')">
+            <i class="fas fa-mobile-screen"></i> PhoneCompare
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item" data-target="home" onclick="navigate('home')">Home</li>
+            <li class="nav-item" data-target="listing" onclick="navigate('listing')">Browse Phones</li>
+            <li class="nav-item compare-link" data-target="comparison" onclick="navigate('comparison')">
+                Compare <span id="compare-count" class="badge">0</span>
+            </li>
+        </ul>
+        <div class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <main id="app-content">
+        <!-- =============== HOME PAGE =============== -->
+        <section id="page-home" class="page active">
+            <header class="hero">
+                <h1>Find Your Perfect Smartphone</h1>
+                <p>Compare the latest devices based on your needs: gaming, camera, or daily use.</p>
+                <button class="btn btn-primary" onclick="navigate('listing')">Browse All Phones <i class="fas fa-arrow-right fade-left"></i></button>
+            </header>
+
+            <div class="filter-section section-container">
+                <h2>Quick Filters</h2>
+                <div class="home-filters">
+                    <div class="filter-group">
+                        <label for="price-filter-home">Price Range</label>
+                        <select id="price-filter-home">
+                            <option value="all">All Prices</option>
+                            <option value="under10k">Under ₹10,000</option>
+                            <option value="10k-15k">₹10,000 - ₹15,000</option>
+                            <option value="15k-20k">₹15,000 - ₹20,000</option>
+                            <option value="above20k">₹20,000+</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-secondary" onclick="applyHomeFilters()">Search <i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="categories-section section-container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card" onclick="browseCategory('Gaming Phones')">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Gaming Phones</h3>
+                    </div>
+                    <div class="category-card" onclick="browseCategory('Camera Phones')">
+                        <i class="fas fa-camera"></i>
+                        <h3>Camera Phones</h3>
+                    </div>
+                    <div class="category-card" onclick="browseCategory('Normal Usage Phones')">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>Normal Usage</h3>
+                    </div>
+                    <div class="category-card" onclick="browseCategory('Budget Phones')">
+                        <i class="fas fa-tag"></i>
+                        <h3>Budget Phones</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== LISTING PAGE =============== -->
+        <section id="page-listing" class="page hidden">
+            <div class="section-container">
+                <div class="listing-header">
+                    <h2>All Smartphones</h2>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Search by brand or name...">
+                    </div>
+                </div>
+
+                <div class="active-filters-display" id="active-filters-display">
+                    <!-- Badges for active filters will appear here -->
+                </div>
+
+                <div class="phone-grid" id="phone-grid">
+                    <!-- Phone cards dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== COMPARISON PAGE =============== -->
+        <section id="page-comparison" class="page hidden">
+            <div class="section-container">
+                <div class="comparison-header">
+                    <h2>Compare Phones</h2>
+                    <button class="btn btn-outline" id="clear-compare-btn" onclick="clearComparison()">Clear All</button>
+                </div>
+                
+                <div id="comparison-empty" class="empty-state">
+                    <i class="fas fa-balance-scale"></i>
+                    <p>No phones selected for comparison. Select up to 3 phones to compare their specs.</p>
+                    <button class="btn btn-primary" onclick="navigate('listing')">Add Phones to Compare</button>
+                </div>
+
+                <div id="comparison-content" class="hidden">
+                    <div class="table-container">
+                        <table class="compare-table" id="compare-table">
+                            <!-- Table content dynamically inserted -->
+                        </table>
+                    </div>
+                    
+                    <div class="recommendation-section" id="recommendation-result">
+                        <h3><i class="fas fa-award"></i> Our Recommendations</h3>
+                        <div id="recommendation-text"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-item active" data-target="home" onclick="navigate('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="mobile-nav-item" data-target="listing" onclick="navigate('listing')">
+            <i class="fas fa-list"></i>
+            <span>Browse</span>
+        </div>
+        <div class="mobile-nav-item" data-target="comparison" onclick="navigate('comparison')">
+            <div style="position:relative;">
+                <i class="fas fa-exchange-alt"></i>
+                <span id="mobile-compare-badge" class="badge badge-float">0</span>
+            </div>
+            <span>Compare</span>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
