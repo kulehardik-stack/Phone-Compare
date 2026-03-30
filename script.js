@@ -110,18 +110,18 @@ const phones = [
         display: "6.67\" AMOLED, 120Hz",
         image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400"
     },
-    // {
-    //     id: 10,
-    //     name: "Samsung Galaxy A55",
-    //     brand: "Samsung",
-    //     category: "Normal Usage Phones",
-    //     price: 39999,
-    //     processor: "Exynos 1480",
-    //     processorScore: 72,
-    //     battery: 5000,
-    //     display: "6.6\" Super AMOLED, 120Hz",
-    //     image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
-    // }
+    {
+        id: 10,
+        name: "Samsung Galaxy A55",
+        brand: "Samsung",
+        category: "Normal Usage Phones",
+        price: 39999,
+        processor: "Exynos 1480",
+        processorScore: 72,
+        battery: 5000,
+        display: "6.6\" Super AMOLED, 120Hz",
+        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
+    }
 ];
 
 // App State
