@@ -88,7 +88,7 @@ const phones = [
     },
     {
         id: 8,
-        name: "Pixel 8",
+        name: "Pixel 9",
         brand: "Google",
         category: "Camera Phones",
         price: 75999,
