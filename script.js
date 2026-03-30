@@ -88,7 +88,7 @@ const phones = [
     },
     {
         id: 8,
-        name: "Pixel 9",
+        name: "Pixel 8",
         brand: "Google",
         category: "Camera Phones",
         price: 75999,
@@ -96,7 +96,7 @@ const phones = [
         processorScore: 85,
         battery: 4575,
         display: "6.2\" OLED, 120Hz",
-        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
+        image: "https://pk.ign.com/google-pixel-8/217328/review/google-pixel-8-smartphone-review"
     },
     {
         id: 9,
