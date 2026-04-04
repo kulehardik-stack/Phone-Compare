@@ -36,7 +36,7 @@ const phones = [
         processorScore: 98,
         battery: 5500,
         display: "6.78\" LTPO AMOLED, 165Hz",
-        image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400"
+        image: "https://dlcdnwebimgs.asus.com/gain/B7CAAEAE-B703-45D0-B037-7200CAD1ED5F/w1000/h732"
     },
     {
         id: 4,
