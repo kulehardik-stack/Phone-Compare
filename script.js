@@ -12,7 +12,7 @@ const phones = [
         processorScore: 98,
         battery: 5000,
         display: "6.8\" Dynamic AMOLED 2X, 120Hz",
-        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
+        image: "https://rukminim2.flixcart.com/image/1280/1280/xif0q/mobile/y/s/g/-original-imahgfmy2zgqvjmy.jpeg?q=90"
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const phones = [
         processorScore: 99,
         battery: 4422,
         display: "6.7\" Super Retina XDR OLED, 120Hz",
-        image: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&q=80&w=400"
+        image: "https://rukminim2.flixcart.com/image/1280/1280/xif0q/mobile/x/t/d/-original-imahggewxkkg999k.jpeg?q=90"
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const phones = [
         processorScore: 45,
         battery: 5000,
         display: "6.79\" IPS LCD, 90Hz",
-        image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400"
+        image: "https://rukminim2.flixcart.com/image/1280/1280/xif0q/mobile/k/j/n/-original-imags37gyajqxkgp.jpeg?q=90"
     },
     {
         id: 5,
@@ -60,7 +60,7 @@ const phones = [
         processorScore: 55,
         battery: 5000,
         display: "6.5\" IPS LCD, 120Hz",
-        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
+        image: "https://m.media-amazon.com/images/I/71H6j2akjxL._SL1500_.jpg"
     },
     {
         id: 6,
@@ -72,7 +72,7 @@ const phones = [
         processorScore: 78,
         battery: 5000,
         display: "6.7\" Flexible AMOLED, 120Hz",
-        image: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&q=80&w=400"
+        image: "https://m.media-amazon.com/images/I/518bHtDa7YL.jpg"
     },
     {
         id: 7,
@@ -84,7 +84,7 @@ const phones = [
         processorScore: 92,
         battery: 5500,
         display: "6.78\" AMOLED, 120Hz",
-        image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400"
+        image: "https://oasis.opstatics.com/content/dam/oasis/page/2024/global/product/aston/aston_blue.png"
     },
     {
         id: 8,
@@ -96,7 +96,7 @@ const phones = [
         processorScore: 85,
         battery: 4575,
         display: "6.2\" OLED, 120Hz",
-        image: "https://pk.ign.com/google-pixel-8/217328/review/google-pixel-8-smartphone-review"
+        image: "https://rukminim2.flixcart.com/image/1280/1280/xif0q/mobile/e/y/n/pixel-8a-ga04432-in-google-original-imahyn3mqzdbzywg.jpeg?q=90"
     },
     {
         id: 9,
@@ -108,7 +108,7 @@ const phones = [
         processorScore: 89,
         battery: 5000,
         display: "6.67\" AMOLED, 120Hz",
-        image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=400"
+        image: "https://i02.appmifile.com/117_operator_sg/11/12/2023/9beac802a13acc28e63b66a240607bde.png?f=webp"
     },
     {
         id: 10,
@@ -120,7 +120,7 @@ const phones = [
         processorScore: 72,
         battery: 5000,
         display: "6.6\" Super AMOLED, 120Hz",
-        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=400"
+        image: "https://m.media-amazon.com/images/I/71EeBkydf9L._SL1500_.jpg"
     }
 ];
 
